@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_500"
+    tools:context="la.hackspace.irvin.pokedex.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/poke_ball"
+            android:contentDescription="@string/str_img_desc"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"/>
+
+        <EditText
+            android:id="@+id/nomPokemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/str_hint_nombre"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey_50"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/tipPokemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/str_hint_tipo"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey_50"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btn_id_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_btn_login"
+            android:onClick="login"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
